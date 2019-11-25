@@ -17,6 +17,9 @@ Manual de criação de aplicações Flutter para mobile e web
 #### 1. Crie um novo projeto
 [Flutter - Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
 
+![alt_text](assets/passo_1.png "image_tooltip")
+![alt_text](assets/passo_1b.png "image_tooltip")
+
 Crie o projeto com AndroidX, a versão melhorada da Support Library
 ```
 flutter create --androidx -t tipo_do_projeto path_do_projeto
