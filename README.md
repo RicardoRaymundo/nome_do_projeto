@@ -1,6 +1,6 @@
-# **Criando app Flutter**
+# **Manual de criação de aplicações Flutter (Mobile/Web)**
 
-Manual de criação de apps mobile e web para Flutter
+Manual de criação de aplicações Flutter para mobile e web 
 
 
 ## Conteúdo
@@ -8,26 +8,23 @@ Manual de criação de apps mobile e web para Flutter
 1. [Passo à passo](#passo-à-passo)
 1. [Aprender](#aprender)
 1. [Agradecimentos](#Agradecimentos)
-1. [Contribuir](#contribuir)
 1. [Licença](#licença)
 
 ## Passo-à-Passo
+> Abra o terminal/prompt de comando para realizar o passo à passo
 
 ### Mobile
 #### 1. Crie um novo projeto
+[Flutter - Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
 
+Crie o projeto com AndroidX, a versão melhorada da Support Library
 ```
-flutter create nome_do_projeto
+flutter create --androidx -t tipo_do_projeto path_do_projeto
+
+Exemplo:
+flutter create --androidx -t app /Users/macbookpro/AndroidStudioProjects/nome_do_projeto
 ```
-
-
-
-**Recomendado** - Crie o projeto com AndroidX, a versão melhorada da Support Library
-
-
-```
-flutter create --androidx -t <project-type> <new-project-path>
-```
+> Saiba mais sobre o [AndroidX](https://flutter.dev/docs/development/androidx-migration) 
 
 #### 2.  Selecione o projeto
 
@@ -36,7 +33,7 @@ cd nome_do_projeto
 ```
 
 
-#### 3.  Verificar se há dispositivos disponíveis
+#### 3.  Verifique se há dispositivos disponíveis
 
 ```
 flutter devices
@@ -50,49 +47,52 @@ flutter devices
 flutter run
 ```
 
-
 #### 5.  Execute o "Hot Reload"
 `r`
-
+> Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)
 ### Web
-#### 1.  Alterar o channel para dev ou master
+[flutter.dev/docs/get-started/web](https://flutter.dev/docs/get-started/web)
+#### 1.  Altere o channel para dev
 
 ```
 flutter channel dev
 ```
-ou
-```
-flutter channel master
-```
 
-
-#### 2.  Atualizar o Flutter SDK
+> Saiba mais sobre 
+[Flutter build release channels](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels)
+, e [Trocando os canáis do Flutter](https://flutter.dev/docs/development/tools/sdk/upgrading#switching-flutter-channels)
+#### 2.  Atualize o Flutter SDK
 
 ```
 flutter upgrade
 ```
 
 
-#### 3.  Habilitar o suporte para web
+#### 3.  Habilite o suporte para web
 
 ```
 flutter config --enable-web
 ```
+e para desabilitar
+```
+flutter config --no-enable-web
+```
 
 
-#### 4.  Verificar se há o Chrome como dispositivo disponível
+#### 4.  Verifique se há o Chrome como dispositivo disponível
 
 ```
 flutter devices
 ```
 
 
-#### 5. Habilitar o suporte para web em um projeto já criado
-
+#### 5. Habilite o suporte para web em um projeto já criado
+Selecione o projeto
 ```
-cd projeto_sem_web
+cd nome_do_projeto
 ```
 
+Agora execute o comando
 ```
 flutter create .
 ```
@@ -110,16 +110,7 @@ flutter create .
 
 [flutter.dev/docs/get-started/test-drive](https://flutter.dev/docs/get-started/test-drive?tab=terminal#vscode)
 
-[https://flutter.dev/docs/get-started/web](https://flutter.dev/docs/get-started/web)
-
 [https://flutter.dev/docs/get-started/codelab](https://flutter.dev/docs/get-started/codelab)
-
-
-## Contribuir
-
-Contribuições são sempre muito bem vindas! Não precisam ser somente através de desenvolvimento de código, qualquer ajuda com ideias, sugestões, melhorias na documentação e doações são sempre muito apreciadas!
-
-Participe da comunidade [Projeto que Vale](http://www.projetoquevale.com.br/) e colabore da forma que achar melhor.
 
 
 ## Licença
