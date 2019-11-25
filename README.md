@@ -13,18 +13,14 @@ Manual de criação de aplicações Flutter para mobile e web
 ## Passo-à-Passo
 > Abra o terminal/prompt de comando para realizar o passo à passo
 
-### Mobile
+### Aplicação Mobile
 #### 1. Crie um novo projeto
 [Flutter - Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
 
-Crie o projeto com AndroidX, a versão melhorada da Support Library
+Selecione uma pasta pelo terminar e execute
 ```
-flutter create --androidx -t tipo_do_projeto path_do_projeto
-
-Exemplo:
-flutter create --androidx -t app /Users/macbookpro/AndroidStudioProjects/nome_do_projeto
+flutter create nome_do_projeto
 ```
-> Saiba mais sobre o [AndroidX](https://flutter.dev/docs/development/androidx-migration) 
 
 #### 2.  Selecione o projeto
 
@@ -50,7 +46,44 @@ flutter run
 #### 5.  Execute o "Hot Reload"
 `r`
 > Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)
-### Web
+
+### Aplicação Mobile(AndroidX)
+#### 1. Crie um novo projeto
+Crie o projeto com AndroidX, a versão melhorada da Support Library
+```
+flutter create --androidx -t tipo_do_projeto path_do_projeto
+
+Exemplo:
+flutter create --androidx -t app /Users/macbookpro/AndroidStudioProjects/nome_do_projeto
+```
+> Saiba mais sobre [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
+
+#### 2.  Selecione o projeto
+
+```
+cd nome_do_projeto
+```
+
+
+#### 3.  Verifique se há dispositivos disponíveis
+
+```
+flutter devices
+```
+ 
+> Procure por:  "Set up your Android device" [neste link](https://kobiton.com/topics/develop-deploy-and-test-flutter-apps/)
+
+#### 4.  Execute o app
+
+```
+flutter run
+```
+
+#### 5.  Execute o "Hot Reload"
+`r`
+> Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)
+
+### Aplicação Web
 [flutter.dev/docs/get-started/web](https://flutter.dev/docs/get-started/web)
 #### 1.  Altere o channel para dev
 
@@ -73,7 +106,9 @@ flutter upgrade
 ```
 flutter config --enable-web
 ```
+
 e para desabilitar
+
 ```
 flutter config --no-enable-web
 ```
@@ -105,7 +140,7 @@ flutter create .
 [https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
 
 
-[Comandos Dart, Pub e Flutter](https://dartcode.org/docs/commands/#flutter-new-project)
+[Comandos Dart, Pub e Flutter](https://dartcode.org/docs/commands)
 
 
 [flutter.dev/docs/get-started/test-drive](https://flutter.dev/docs/get-started/test-drive?tab=terminal#vscode)
