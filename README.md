@@ -4,11 +4,15 @@ Manual de criação de aplicações Flutter para mobile e web
 
 
 ## Conteúdo
-
+1. [Instalar](#instalar)
 1. [Passo à passo](#passo-à-passo)
 1. [Aprender](#aprender)
 1. [Agradecimentos](#Agradecimentos)
 1. [Licença](#licença)
+
+## Instalar
+[Instale o Flutter](https://flutter.dev/docs/get-started/install)
+
 
 ## Passo-à-Passo
 > Abra o terminal/prompt de comando para realizar o passo à passo
@@ -135,10 +139,6 @@ flutter create .
 
 
 ## Aprender
-
-
-[https://flutter.dev/docs/get-started/install](https://flutter.dev/docs/get-started/install)
-
 
 [Comandos Dart, Pub e Flutter](https://dartcode.org/docs/commands)
 
