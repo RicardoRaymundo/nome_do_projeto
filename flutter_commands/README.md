@@ -57,3 +57,36 @@ Execute `flutter help <comando>` para mais informações sobre o comando
 
 Execute `flutter help -v` para obter ajuda detalhada, incluindo opções menos usadas.
 
+### Criar app Mobile
+#### 1. Crie um novo projeto
+[Flutter - Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
+
+Selecione uma pasta pelo terminal/prompt e execute
+```
+flutter create nome_do_projeto
+```
+
+#### 2.  Selecione o projeto
+
+```
+cd nome_do_projeto
+```
+
+
+#### 3.  Verifique se há dispositivos disponíveis
+
+```
+flutter devices
+```
+ 
+> Procure por:  "Set up your Android device" [neste link](https://kobiton.com/topics/develop-deploy-and-test-flutter-apps/)
+
+#### 4.  Execute o app
+
+```
+flutter run
+```
+
+#### 5.  Execute o "Hot Reload"
+`r`
+> Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)
