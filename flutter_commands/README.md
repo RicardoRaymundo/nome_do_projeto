@@ -3,27 +3,27 @@
 ### Comando comuns:
 |           Comando Flutter          |                                  Descrição                                  |
 |----------------------------------|---------------------------------------------------------------------------|
-| `flutter create<diretório de saída>` | Cria uma nova aplicação Flutter em um diretório específico                  |
-| `flutter run [opções]`               | Execute o aplicativo Flutter em um dispositivo conectado ou em um emulador. |
+| flutter create <diretório de saída> | Cria uma nova aplicação Flutter em um diretório específico                  |
+| flutter run <opções>               | Execute o aplicativo Flutter em um dispositivo conectado ou em um emulador. |
 
-Uso: `flutter <comando> [argumentos]`
+Uso: flutter <comando> <argumentos>
 
 ### Opções globais:
 
 | Comando Flutter      |                                                                     Descrição                                                                    |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `-h, --help`           | Imprima essas informações de uso.                                                                                                                |
-| `-v, --verbose`        | Registro barulhento, incluindo todos os comandos do shell executados. Se usado com --help, mostra opções ocultas.                                |
-| `-d, --device-id`      | ID ou nome do dispositivo de destino (prefixos permitidos).                                                                                      |
-| `--version`            | Relata a versão desta ferramenta.                                                                                                                |
-| `--suppress-analytics` | Suprima os relatórios analíticos quando este comando for executado.                                                                              |
-| `--bug-report`         | Captura um arquivo de relatório de bug para enviar à equipe do Flutter. Contém caminhos locais, identificadores de dispositivo e trechos de log. |
-| `--packages`           | Caminho para o seu arquivo ".packages".  (obrigatório, pois o diretório atual não contém um arquivo ".packages")                                 |
+|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| -h, --help           | Imprima essas informações de uso.                                                                                                                |
+| -v, --verbose        | Registro barulhento, incluindo todos os comandos do shell executados. Se usado com --help, mostra opções ocultas.                                |
+| -d, --device-id      | ID ou nome do dispositivo de destino (prefixos permitidos).                                                                                      |
+| --version            | Relata a versão desta ferramenta.                                                                                                                |
+| --suppress-analytics | Suprima os relatórios analíticos quando este comando for executado.                                                                              |
+| --bug-report         | Captura um arquivo de relatório de bug para enviar à equipe do Flutter. Contém caminhos locais, identificadores de dispositivo e trechos de log. |
+| --packages           | Caminho para o seu arquivo ".packages".  (obrigatório, pois o diretório atual não contém um arquivo ".packages")                                 |
 
 Comandos disponíveis:
 
 | Comando Flutter         |                                                           Descrição                                                          |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------|
+|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------|
 | `analyze`               | Analise o código Dart do projeto.                                                                                            |
 | `assemble`              | Monte e crie recursos de Flutter                                                                                             |
 | `attach`                | Anexe a um aplicativo em execução.                                                                                           |
