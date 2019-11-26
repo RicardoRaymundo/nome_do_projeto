@@ -1,18 +1,18 @@
 # Comando Flutter!
 
 ### Comando comuns:
-|           Comando Flutter          |                                  Descrição                                  |
-|----------------------------------|---------------------------------------------------------------------------|
+|           Comando Flutter           |                                  Descrição                                  |
+|-------------------------------------|-----------------------------------------------------------------------------|
 | flutter create <diretório de saída> | Cria uma nova aplicação Flutter em um diretório específico                  |
-| flutter run <opções>               | Execute o aplicativo Flutter em um dispositivo conectado ou em um emulador. |
+| flutter run <opções>                | Execute o aplicativo Flutter em um dispositivo conectado ou em um emulador. |
 
-Uso: flutter <comando> <argumentos>
+Uso: flutter `<comando> <argumentos>`
 
 
 ### Opções globais:
 
 | Comando Flutter      |                                                                     Descrição                                                                    |
-|:----------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+|:---------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------|
 | -h, --help           | Imprima essas informações de uso.                                                                                                                |
 | -v, --verbose        | Registro barulhento, incluindo todos os comandos do shell executados. Se usado com --help, mostra opções ocultas.                                |
 | -d, --device-id      | ID ou nome do dispositivo de destino (prefixos permitidos).                                                                                      |
@@ -24,8 +24,8 @@ Uso: flutter <comando> <argumentos>
 
 ### Comandos disponíveis:
 
-| Comando Flutter         |                                                           Descrição                                                          |
-|:-------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| Comando Flutter       |                                                           Descrição                                                          |
+|:----------------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | analyze               | Analise o código Dart do projeto.                                                                                            |
 | assemble              | Monte e crie recursos de Flutter                                                                                             |
 | attach                | Anexe a um aplicativo em execução.                                                                                           |
@@ -35,7 +35,7 @@ Uso: flutter <comando> <argumentos>
 | clean                 | Exclua os diretórios build/ e .dart_tool/.                                                                                   |
 | config                | Defina as configurações do Flutter.                                                                                          |
 | create                | Crie um novo projeto Flutter.                                                                                                |
-| devices               | Listar todos os dispositivos conectados.                                                                                     |
+| devices               | Lista todos os dispositivos conectados.                                                                                      |
 | doctor                | Mostrar informações sobre as ferramentas instaladas.                                                                         |
 | drive                 | Executa os testes do Flutter Driver para o projeto atual.                                                                    |
 | emulators             | Lista, inicia e cria emuladores.                                                                                             |
@@ -57,36 +57,16 @@ Execute `flutter help <comando>` para mais informações sobre o comando
 
 Execute `flutter help -v` para obter ajuda detalhada, incluindo opções menos usadas.
 
-### Criar app Mobile
+### Crie app Mobile
 #### 1. Crie um novo projeto
-[Flutter - Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)
 
-Selecione uma pasta pelo terminal/prompt e execute
-```
-flutter create nome_do_projeto
-```
+| Comando         | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| create          | Crie um novo projeto Flutter. [Write your first Flutter app, part 1](https://flutter.dev/docs/get-started/codelab)                                     | flutter create `<nome do projeto>`    |
+| cd              | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
+| devices         | Lista todos os dispositivos conectados. [Set up your Android device](https://flutter.dev/docs/get-started/install/windows#set-up-your-android-device)  | flutter devices                       |
+| run             | Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
+| -d, --device-id | Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
+| r               | Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)                                                                 | r                                     |
 
-#### 2.  Selecione o projeto
-
-```
-cd nome_do_projeto
-```
-
-
-#### 3.  Verifique se há dispositivos disponíveis
-
-```
-flutter devices
-```
- 
-> Procure por:  "Set up your Android device" [neste link](https://kobiton.com/topics/develop-deploy-and-test-flutter-apps/)
-
-#### 4.  Execute o app
-
-```
-flutter run
-```
-
-#### 5.  Execute o "Hot Reload"
-`r`
-> Saiba mais sobre o [Hot Reload](https://flutter.dev/docs/development/tools/hot-reload)
+### Canais
