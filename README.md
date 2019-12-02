@@ -7,7 +7,7 @@ Manual de criação de aplicações Flutter para mobile e web
 1. [Instalar](#instalar)
 1. [Passo à passo](#passo-à-passo)
     * [Aplicação Mobile](#aplicação-mobile) 
-    * [Aplicação Mobile(AndroidX)](#Aplicação-Mobile(AndroidX))
+    * [Aplicação Mobile - AndroidX](#Aplicação-Mobile-AndroidX))
     * [Aplicação Web]
 1. [Aprender](#aprender)
 1. [Agradecimentos](#Agradecimentos)
@@ -117,7 +117,7 @@ flutter config --enable-web
 e para desabilitar
 
 ```
-flutter config --no-enable-web
+    flutter config --no-enable-web
 ```
 
 
