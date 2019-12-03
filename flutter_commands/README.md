@@ -127,7 +127,7 @@ Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório onde deseja criar seu projeto.                                      | cd `<diretório desejado>`    |
-| create          |         | Crie um novo projeto Flutter com Android X.                                      | flutter create `<nome do projeto>`    |
+| create          |         | Crie um novo projeto Flutter com Android X.                                      | flutter create --androidx `<nome do projeto>`    |
 | cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
 | run             || Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
