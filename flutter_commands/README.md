@@ -164,3 +164,14 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
 | --device-id | -d | Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter -d chrome run |
+
+### Compile uma aplicação web
+Siga os passos para compilar uma aplicação web. Para saber mais: [Build](#build), 
+[Preparing an web app for release](https://flutter.dev/docs/deployment/web), 
+> Abra o terminal/prompt de comando.
+
+| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
+| build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build web                           |
+| cd             || Entre no diretório de compilação web.                                                                                                                          | `<diretório do projeto>`/build/web                           |
