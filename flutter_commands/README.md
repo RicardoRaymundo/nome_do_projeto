@@ -142,7 +142,7 @@ Siga os passos para compilar uma aplicação mobile. Para saber mais: [Build](#b
 | cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
 | cd             || Entre no diretório de compilação Android.                                                                                                                          | `<diretório do projeto>`/build/app/outputs/apk/release                           |
-
+*Caso a pasta 'build' não esteja visível no Android Studio, delete a linha `<excludeFolder url="file://$MODULE_DIR$/build" />` do arquivo **nome_do_projeto.iml** na pasta raiz.
 
 ## Web
 ### Crie uma aplicação Web
@@ -166,8 +166,8 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 | --device-id | -d | Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter -d chrome run |
 
 ### Compile uma aplicação web
-Siga os passos para compilar uma aplicação web. Para saber mais: [Build](#build), 
-[Preparing an web app for release](https://flutter.dev/docs/deployment/web), 
+Siga os passos para compilar uma aplicação web. Para saber mais: [Build](#build). 
+[Preparing an web app for release](https://flutter.dev/docs/deployment/web) 
 > Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
@@ -175,3 +175,4 @@ Siga os passos para compilar uma aplicação web. Para saber mais: [Build](#buil
 | cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build web                           |
 | cd             || Entre no diretório de compilação web.                                                                                                                          | `<diretório do projeto>`/build/web                           |
+*Caso a pasta 'build' não esteja visível no Android Studio, delete a linha `<excludeFolder url="file://$MODULE_DIR$/build" />` do arquivo **nome_do_projeto.iml** na pasta raiz.
