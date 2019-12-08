@@ -108,48 +108,59 @@ Para saber mais: [Hot Reload](https://flutter.dev/docs/development/tools/hot-rel
 
 
 ## Mobile
-### Crie um novo projeto
-Siga os passos para criar um projeto. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-
-> Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
-
-| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
-|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| cd              |         | Entre no diretório onde deseja criar seu projeto.                                      | cd `<diretório desejado>`    |
-| create          |         | Crie um novo projeto Flutter.                                      | flutter create `<nome do projeto>`    |
-
-### Crie um novo projeto com AndroidX
-Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
-> Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
+### Crie uma nova aplicação
+Siga os passos para criar uma aplicação. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+> Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| cd              |         | Entre no diretório onde deseja criar seu projeto.                                      | cd `<diretório desejado>`    |
-| create          |         | Crie um novo projeto Flutter com Android X.                                      | flutter create --androidx `<nome do projeto>`    |
+| cd              |         | Entre no diretório onde deseja criar sua aplicação.                                      | cd `<diretório desejado>`    |
+| create          |         | Crie uma nova aplicação Flutter.                                      | flutter create `<nome do projeto>`    |
 
-### Execute um projeto mobile
+### Crie uma nova aplicação AndroidX
+Siga os passos para criar uma aplicação AndroidX. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
+> Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
+| cd              |         | Entre no diretório onde deseja criar sua aplicação.                                      | cd `<diretório desejado>`    |
+| create          |         | Crie uma nova aplicação Flutter com Android X.                                      | flutter create --androidx `<nome do projeto>`    |
+
+### Execute uma aplicação mobile
+> Abra o terminal/prompt de comando.
+
+| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| cd              |         | Entre no diretório da aplicação                                                                                                                          | cd `<diretório do projeto>`           |
 | run             || Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
+| --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
+
+### Compile uma aplicação mobile
+Siga os passos para compilar uma aplicação mobile. Para saber mais sobre os tipos de compilação: [Build](#build) 
+> Abra o terminal/prompt de comando.
+
+| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| cd              |         | Entre no diretório da aplicação                                                                                                                          | cd `<diretório do projeto>`           |
+| build             || Execute o comando de criação de Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
 
 
 ## Web
-### Crie um projeto com Web
-[flutter.dev/docs/get-started/web](https://flutter.dev/docs/get-started/web)
-> Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
+### Crie uma aplicação Web
+Siga os passos para criar uma aplicação web. Para saber mais: [Building a web application with Flutter](https://flutter.dev/docs/get-started/web)
+> Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| channel              |         | Altere o canal para dev                                      | flutter channel dev    |
-| upgrade              |         | Atualize o Flutter SDK                                      | flutter upgrade    |
+| channel              |         | Altere o canal para dev.                                      | flutter channel dev    |
+| upgrade              |         | Atualize o Flutter SDK.                                      | flutter upgrade    |
 | config              |         | Habilite o suporte para web. Para desabilitar, utilize `--no-enable-web`.          | flutter config --enable-web    |
-| cd              |         | Entre no diretório onde deseja criar seu projeto.                   | cd `<diretório desejado>`    |
-| create          |         | Crie um novo projeto Flutter. Caso já tenha um projeto criado, execute `flutter create .`                                     | flutter create `<nome do projeto>`    |
+| cd              |         | Entre no diretório onde deseja criar sua aplicação.                   | cd `<diretório desejado>`    |
+| create          |         | Crie uma nova aplicação Flutter. Caso já tenha uma aplicação criada, execute `flutter create .`                                     | flutter create `<nome do projeto>`    |
 
-### Execute um projeto web
+### Execute uma aplicação web
+> Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
