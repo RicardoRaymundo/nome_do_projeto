@@ -117,9 +117,6 @@ Siga os passos e crie seu primeiro projeto. Para saber mais: [Write your first F
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório onde deseja criar seu projeto.                                      | cd `<diretório desejado>`    |
 | create          |         | Crie um novo projeto Flutter.                                      | flutter create `<nome do projeto>`    |
-| cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
-| run             || Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
-| --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
 
 ### Crie um novo projeto com AndroidX
 Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
@@ -128,9 +125,15 @@ Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório onde deseja criar seu projeto.                                      | cd `<diretório desejado>`    |
 | create          |         | Crie um novo projeto Flutter com Android X.                                      | flutter create --androidx `<nome do projeto>`    |
+
+### Execute um projeto mobile
+
+| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
 | run             || Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
+
 
 ## Web
 ### Crie um projeto com Web
@@ -143,5 +146,10 @@ Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber 
 | config              |         | Habilite o suporte para web. Para desabilitar, utilize `--no-enable-web`.          | flutter config --enable-web    |
 | cd              |         | Entre no diretório onde deseja criar seu projeto.                   | cd `<diretório desejado>`    |
 | create          |         | Crie um novo projeto Flutter. Caso já tenha um projeto criado, execute `flutter create .`                                     | flutter create `<nome do projeto>`    |
+
+### Execute um projeto web
+
+| Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
+|-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório do projeto                                                                                                                          | cd `<diretório do projeto>`           |
 | --device-id | -d | Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter -d chrome run |
