@@ -132,7 +132,7 @@ Siga os passos para criar uma aplicação mobile AndroidX. Para saber mais: [Mig
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório da aplicação                                                                                                                          | cd `<diretório do projeto>`           |
-| run             || Execute o aplicativo Flutter.                                                                                                                          | flutter run                           |
+| run             || Execute o aplicativo Flutter no dispositivo default.                                                                                                                          | flutter run                           |
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
 
 ### Compile uma aplicação mobile
