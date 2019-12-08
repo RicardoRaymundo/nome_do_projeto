@@ -109,7 +109,7 @@ Para saber mais: [Hot Reload](https://flutter.dev/docs/development/tools/hot-rel
 
 ## Mobile
 ### Crie um novo projeto
-Siga os passos e crie seu primeiro projeto. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+Siga os passos para criar um projeto. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 
 > Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
 
@@ -120,6 +120,7 @@ Siga os passos e crie seu primeiro projeto. Para saber mais: [Write your first F
 
 ### Crie um novo projeto com AndroidX
 Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
+> Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
@@ -138,6 +139,7 @@ Crie o projeto com AndroidX, a versão melhorada da Support Library. Para saber 
 ## Web
 ### Crie um projeto com Web
 [flutter.dev/docs/get-started/web](https://flutter.dev/docs/get-started/web)
+> Abra o terminal/prompt de comando e acesse o diretório onde quer criar seu projeto para realizar o passo à passo
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
