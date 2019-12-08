@@ -141,8 +141,9 @@ Siga os passos para compilar uma aplicação mobile. Para saber mais sobre os ti
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| cd              |         | Entre no diretório da aplicação                                                                                                                          | cd `<diretório do projeto>`           |
+| cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
+| cd             || Entre no diretório de compilação Android.                                                                                                                          | build/app/outputs/apk/release                           |
 
 
 ## Web
