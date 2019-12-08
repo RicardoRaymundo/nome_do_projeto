@@ -58,10 +58,6 @@ Execute `flutter help <comando>` para mais informações sobre o comando
 Execute `flutter help -v` para obter ajuda detalhada, incluindo opções menos usadas.
 
 ### Build
-
-Para saber mais: [Preparing an Android app for release](https://flutter.dev/docs/deployment/android), 
-[Flutter's build modes](https://flutter.dev/docs/testing/build-modes)
-
 | Comando       | Descrição                                                                                                                    |
 |---------------|------------------------------------------------------------------------------------------------------------------------------|
 | aar           | Cria um repositório contendo um arquivo AAR e POM. PESQUISAR AAR E POM                                                                          |
@@ -136,14 +132,16 @@ Siga os passos para criar uma aplicação mobile AndroidX. Para saber mais: [Mig
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
 
 ### Compile uma aplicação mobile
-Siga os passos para compilar uma aplicação mobile. Para saber mais sobre os tipos de compilação: [Build](#build) 
+Siga os passos para compilar uma aplicação mobile. Para saber mais: [Build](#build), 
+[Preparing an Android app for release](https://flutter.dev/docs/deployment/android), 
+[Flutter's build modes](https://flutter.dev/docs/testing/build-modes)
 > Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
-| cd             || Entre no diretório de compilação Android.                                                                                                                          | build/app/outputs/apk/release                           |
+| cd             || Entre no diretório de compilação Android.                                                                                                                          | `<diretório do projeto>`/build/app/outputs/apk/release                           |
 
 
 ## Web
