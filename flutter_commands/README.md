@@ -30,7 +30,7 @@ Uso: flutter `<comando> <argumentos>`
 | assemble              | Monte e crie recursos de Flutter                                                                                             |
 | attach                | Anexe a um aplicativo em execução.                                                                                           |
 | bash-completion       | Scripts de instalação de conclusão do shell da linha de comando.                                                             |
-| build                 | Comandos de criação de Flutter.                                                                                              |
+| build                 | Comandos de criação do Flutter.                                                                                              |
 | channel               | Listar ou alternar os canais de Flutter.                                                                                     |
 | clean                 | Exclua os diretórios build/ e .dart_tool/.                                                                                   |
 | config                | Defina as configurações do Flutter.                                                                                          |
@@ -108,8 +108,8 @@ Para saber mais: [Hot Reload](https://flutter.dev/docs/development/tools/hot-rel
 
 
 ## Mobile
-### Crie uma nova aplicação
-Siga os passos para criar uma aplicação. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+### Crie uma nova aplicação mobile
+Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 > Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
@@ -117,8 +117,8 @@ Siga os passos para criar uma aplicação. Para saber mais: [Write your first Fl
 | cd              |         | Entre no diretório onde deseja criar sua aplicação.                                      | cd `<diretório desejado>`    |
 | create          |         | Crie uma nova aplicação Flutter.                                      | flutter create `<nome do projeto>`    |
 
-### Crie uma nova aplicação AndroidX
-Siga os passos para criar uma aplicação AndroidX. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
+### Crie uma nova aplicação mobile AndroidX
+Siga os passos para criar uma aplicação mobile AndroidX. Para saber mais: [Migrando para AndroidX](https://flutter.dev/docs/development/androidx-migration) 
 > Abra o terminal/prompt de comando.
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
@@ -142,8 +142,7 @@ Siga os passos para compilar uma aplicação mobile. Para saber mais sobre os ti
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório da aplicação                                                                                                                          | cd `<diretório do projeto>`           |
-| build             || Execute o comando de criação de Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
-| --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
+| build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
 
 
 ## Web
