@@ -142,6 +142,7 @@ Siga os passos para compilar uma aplicação mobile. Para saber mais: [Build](#b
 | cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build `<tipo de build>` --release                           |
 | cd             || Entre no diretório de compilação Android.                                                                                                                          | `<diretório do projeto>`/build/app/outputs/apk/release                           |
+
 *Caso a pasta 'build' não esteja visível no Android Studio, delete a linha `<excludeFolder url="file://$MODULE_DIR$/build" />` do arquivo **nome_do_projeto.iml** na pasta raiz.
 
 ## Web
@@ -175,4 +176,5 @@ Siga os passos para compilar uma aplicação web. Para saber mais: [Build](#buil
 | cd              |         | Entre no diretório da aplicação.                                                                                                                          | cd `<diretório do projeto>`           |
 | build             || Execute o comando de criação do Flutter.                                                                                                                          | flutter build web                           |
 | cd             || Entre no diretório de compilação web.                                                                                                                          | `<diretório do projeto>`/build/web                           |
+
 *Caso a pasta 'build' não esteja visível no Android Studio, delete a linha `<excludeFolder url="file://$MODULE_DIR$/build" />` do arquivo **nome_do_projeto.iml** na pasta raiz.
