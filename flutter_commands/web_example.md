@@ -21,6 +21,7 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | upgrade              |         | Atualize o Flutter SDK.                                      | flutter upgrade    |
 
+https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/flutter_commands/images/commands/flutter_upgrade.gif
 
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
