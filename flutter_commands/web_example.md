@@ -13,7 +13,7 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | channel              |         | Altere o canal para dev.                                      | flutter channel dev    |
 
-![command_cd](images/commands/command_cd.png)
+![flutter channel](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/flutter_commands/images/commands/flutter_channel.gif)
 
 -------------
 
@@ -21,7 +21,7 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | upgrade              |         | Atualize o Flutter SDK.                                      | flutter upgrade    |
 
-
+![flutter upgrade](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/flutter_commands/images/commands/flutter_upgrade.gif)
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|

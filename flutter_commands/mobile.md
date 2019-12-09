@@ -8,7 +8,7 @@
 ## Mobile
 ### Crie uma nova aplicação mobile
 Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-> Abra o terminal/prompt de comando. [link de tela preta]()
+> Abra o terminal/prompt de comando. Veja o [passo à passo](mobile_example.md#crie-uma-nova-aplica%C3%A7%C3%A3o-mobile)
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
