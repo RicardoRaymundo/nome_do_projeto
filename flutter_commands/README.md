@@ -31,7 +31,7 @@ Uso: flutter `<comando> <argumentos>`
 | attach                | Anexe a um aplicativo em execução.                                                                                           |
 | bash-completion       | Scripts de instalação de conclusão do shell da linha de comando.                                                             |
 | [build](build.md)                 | Comandos de criação do Flutter.                                                                                              |
-| channel               | Listar ou alternar os canais de Flutter.                                                                                     |
+| [channel](channel.md)                | Listar ou alternar os canais de Flutter.                                                                                     |
 | clean                 | Exclua os diretórios build/ e .dart_tool/.                                                                                   |
 | config                | Defina as configurações do Flutter.                                                                                          |
 | create                | Crie um novo projeto Flutter.                                                                                                |
@@ -56,23 +56,6 @@ Uso: flutter `<comando> <argumentos>`
 Execute `flutter <comando> -h` para mais informações sobre o comando
 
 Execute `flutter help -v` para obter ajuda detalhada, incluindo opções menos usadas.
-
-### Canais
-O Flutter possui os seguintes [canais](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels), em ordem crescente de estabilidade:
-
-| Channels | Descrição                                                                                                                                                            |
-|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| master | A atual base da árvore, a mais recente construção. Geralmente funcional, embora às vezes quebremos acidentalmente as coisas.                    |
-| dev    | A versão mais recente e totalmente testada. Geralmente funcional, mas consulte [Bad Builds](https://github.com/flutter/flutter/wiki/Bad-Builds) para obter uma lista de construções de desenvolvimento "ruins" conhecidas. |
-| beta   | Todos os meses, escolhemos o "melhor" desenvolvedor do mês anterior e o promovemos para a versão beta. Essas versões foram testadas com os [codelabs](https://github.com/flutter/flutter/wiki/Codelabs).                 |
-| stable | Quando acreditamos que temos uma construção particularmente boa, a promovemos para o canal estável.                                                                  |
-
-Para trocar o canal:
-
-| Comando         | Descrição                                                                                                                                              | Exemplo                               |
-|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| channel         |  Liste os canais de Flutter.                                     | flutter channel    |
-| channel         |  Troque os canais de Flutter.                                     | flutter channel `<channel>`   |
 
 ### Hot Reload 
 O recurso Hot Reload do Flutter ajuda você a experimentar rápido e facilmente, criar UIs, adicionar recursos e corrigir bugs.
