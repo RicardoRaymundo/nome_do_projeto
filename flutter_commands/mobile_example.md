@@ -9,7 +9,7 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | cd              |         | Entre no diretório onde deseja criar sua aplicação.                                      | cd `<diretório desejado>`    |
 
-![Minion](images/commands/command_cd.png)
+![command_cd](images/commands/command_cd.png)
 
 -----
 
@@ -17,6 +17,7 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | create          |         | Crie uma nova aplicação Flutter.                                      | flutter create `<nome do projeto>`    |
 
-![Minion](images/commands/command_cd.png)
+<img src="https://gph.is/g/Zn6gA8B" width="120">
+<img src="https://media.giphy.com/media/YrGqkhf1uLQJKvJ8MU/giphy.gif" width="120">
 
 -------
