@@ -34,7 +34,7 @@ Siga os passos para criar uma aplicação mobile AndroidX. Para saber mais: [Mig
 | --device-id | -d |Execute o aplicativo Flutter em um dispositivo conectado pelo ID ou nome do dispositivo de destino (prefixos permitidos).                              | flutter --device-id `<device id>` run |
 
 ### Compile uma aplicação mobile
-Siga os passos para compilar uma aplicação mobile. Para saber mais: [Build](#build.md), 
+Siga os passos para compilar uma aplicação mobile. Para saber mais: [Build](build.md), 
 [Preparing an Android app for release](https://flutter.dev/docs/deployment/android), 
 [Flutter's build modes](https://flutter.dev/docs/testing/build-modes)
 > Abra o terminal/prompt de comando.
