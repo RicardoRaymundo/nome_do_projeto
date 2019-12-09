@@ -30,7 +30,7 @@ Uso: flutter `<comando> <argumentos>`
 | assemble              | Monte e crie recursos de Flutter                                                                                             |
 | attach                | Anexe a um aplicativo em execução.                                                                                           |
 | bash-completion       | Scripts de instalação de conclusão do shell da linha de comando.                                                             |
-| build                 | Comandos de criação do Flutter.                                                                                              |
+| [build]()                 | Comandos de criação do Flutter.                                                                                              |
 | channel               | Listar ou alternar os canais de Flutter.                                                                                     |
 | clean                 | Exclua os diretórios build/ e .dart_tool/.                                                                                   |
 | config                | Defina as configurações do Flutter.                                                                                          |
@@ -53,21 +53,9 @@ Uso: flutter `<comando> <argumentos>`
 | upgrade               | Atualiza sua cópia do Flutter.                                                                                               |
 | version               | Lista ou alternar as versões do Flutter.                                                                                    |
 
-Execute `flutter help <comando>` para mais informações sobre o comando
+Execute `flutter <comando> -h` para mais informações sobre o comando
 
 Execute `flutter help -v` para obter ajuda detalhada, incluindo opções menos usadas.
-
-### Build
-| Comando       | Descrição                                                                                                                    |
-|---------------|------------------------------------------------------------------------------------------------------------------------------|
-| aar           | Cria um repositório contendo um arquivo AAR e POM. PESQUISAR AAR E POM                                                                          |
-| aot           | Cria um snapshot compilado antecipadamente do código Dart do seu aplicativo. PESQUISAR AOT                                                |
-| apk           | Cria um arquivo APK do Android a partir do seu aplicativo.                                                                   |
-| appbundle     | Cria um arquivo Bundle de aplicativos Android a partir do seu aplicativo. PESQUISAR APP BUNDLE                                                    |
-| bundle        | Cria o diretório de assets do Flutter no seu aplicativo.                                                                     |
-| ios           | Cria um bundle de aplicativo iOS (somente host do Mac OS X).                                                                 |
-| ios-framework | Cria um diretório .framework para um módulo Flutter e seus plugins para integração em projetos Xcode simples e existentes. |
-| web           | Cria um pacote de aplicativos web.                                                                                      |
 
 ### Canais
 O Flutter possui os seguintes [canais](https://github.com/flutter/flutter/wiki/Flutter-build-release-channels), em ordem crescente de estabilidade:
