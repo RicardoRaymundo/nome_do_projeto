@@ -1,5 +1,5 @@
 # Formando chamadas com o GraphQL
-
+<!--TODO:: corrigir as traduções literais dos nomes de métodos -->
 a. [Autenticando com GraphQL]()
 
 1. O terminal do GraphQL
