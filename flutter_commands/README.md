@@ -30,7 +30,7 @@ Uso: flutter `<comando> <argumentos>`
 | assemble              | Monte e crie recursos de Flutter                                                                                             |
 | attach                | Anexe a um aplicativo em execução.                                                                                           |
 | bash-completion       | Scripts de instalação de conclusão do shell da linha de comando.                                                             |
-| [build]()                 | Comandos de criação do Flutter.                                                                                              |
+| [build](build.md)                 | Comandos de criação do Flutter.                                                                                              |
 | channel               | Listar ou alternar os canais de Flutter.                                                                                     |
 | clean                 | Exclua os diretórios build/ e .dart_tool/.                                                                                   |
 | config                | Defina as configurações do Flutter.                                                                                          |
