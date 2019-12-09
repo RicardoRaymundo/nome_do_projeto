@@ -13,6 +13,7 @@ Siga os passos para criar uma aplicação web. Para saber mais: [Building a web 
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | channel              |         | Altere o canal para dev.                                      | flutter channel dev    |
 
+![command_cd](images/commands/command_cd.png)
 
 -------------
 
