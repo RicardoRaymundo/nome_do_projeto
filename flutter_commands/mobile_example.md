@@ -23,7 +23,7 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 -----------
 
 
-![flutter_create](flutter_commands/flutter_create.gif)
+![flutter_create](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/flutter_commands/images/commands/flutter_create.gif)
 
 
 
