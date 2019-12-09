@@ -17,6 +17,6 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | create          |         | Crie uma nova aplicação Flutter.                                      | flutter create `<nome do projeto>`    |
 
-<img src="https://media.giphy.com/media/YrGqkhf1uLQJKvJ8MU/giphy.gif" width="300">
+<img src="https://media.giphy.com/media/YrGqkhf1uLQJKvJ8MU/giphy.gif" width="600">
 
 -------
