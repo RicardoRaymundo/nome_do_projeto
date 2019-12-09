@@ -16,3 +16,5 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 |          |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
 | create          |         | Crie uma nova aplicação Flutter.                                      | flutter create `<nome do projeto>`    |
+
+![flutter_create](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/flutter_commands/images/commands/flutter_create.gif)
