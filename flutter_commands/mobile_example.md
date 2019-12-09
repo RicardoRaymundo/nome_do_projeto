@@ -19,7 +19,10 @@ Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your f
 
 <img src="https://media.giphy.com/media/YrGqkhf1uLQJKvJ8MU/giphy.gif" width="900">
 
+-----------
 
+
+![](flutter_commands/gifs/flutter_create.gif)
 
 
 
