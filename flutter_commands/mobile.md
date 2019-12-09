@@ -1,20 +1,14 @@
 [Flutter comandos](README.md)
 
-1. [Crie uma nova aplicação mobile](#Crie-uma-nova-aplicação-mobile)
-1. Crie uma nova aplicação mobile AndroidX
-1. Execute uma aplicação mobile
-1. Compile uma aplicação mobile
-
-2. [Crie uma nova aplicação mobile](#Crie-uma-nova-aplicação-mobile)
-2. Crie uma nova aplicação mobile AndroidX
-2. Execute uma aplicação mobile
-2. Compile uma aplicação mobile
-
+1. [Crie uma nova aplicação mobile](#crie-uma-nova-aplicação-mobile)
+1. [Crie uma nova aplicação mobile AndroidX](#crie-uma-nova-aplicação-mobile-androidx)
+1. [Execute uma aplicação mobile](#execute-uma-aplicação-mobile)
+1. [Compile uma aplicação mobile](#compile-uma-aplicação-mobile)
 
 ## Mobile
 ### Crie uma nova aplicação mobile
 Siga os passos para criar uma aplicação mobile. Para saber mais: [Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-> Abra o terminal/prompt de comando.
+> Abra o terminal/prompt de comando. [link de tela preta]()
 
 | Comando         |Atalho   | Descrição                                                                                                                                              | Exemplo                               |
 |-----------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
