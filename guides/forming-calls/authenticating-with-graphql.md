@@ -183,6 +183,7 @@ query {
 
 Olhando a composição linha por linha:
 
-* `query {`
-    
-    Porque queremos ler dados do servidor, não modificá-los, `query` é a operação raiz. (Se você não especificar uma operação, `query` será default.)
+    * `query {`
+        
+        Porque queremos ler dados do servidor, não modificá-los, `query` é a operação raiz. (Se você não especificar uma operação, `query` será default.)
+        
