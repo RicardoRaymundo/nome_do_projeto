@@ -60,6 +60,8 @@ Para alguns exemplos de consultas, consulte " [Um exemplo de consulta usando a A
   - `manage_billing:enterprise:` Leia e grave dados de cobrança da empresa.
   - `read:enterprise:` Leia os dados do perfil da empresa.
   
+  ![bearer token](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/bearer_token1.png)
+  
   3. Copie seu token de acesso pessoal e mantenha-o em um local seguro até adicioná-lo ao seu cliente GraphQL.
 
 ### 2. Escolha um cliente GraphQL
