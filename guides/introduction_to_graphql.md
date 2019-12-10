@@ -3,8 +3,8 @@
 [REFERENCIA](https://developer.github.com/v4/guides/intro-to-graphql/)
 
 # Introduction to GraphQL
-1. Terminologia do GraphQL
-2. Descobrindo a API GraphQL
+1. [Terminologia do GraphQL](#terminologia-do-graphql)
+2. [Descobrindo a API GraphQL](#descobrindo-a-api-graphql)
 
 ## Terminologia do GraphQL
 A API GitHub GraphQL v4 representa uma mudança arquitetônica e conceitual da API REST GitHub v3. Você provavelmente encontrará alguma nova terminologia nos [documentos de referência]() da API do GraphQL v4 .
