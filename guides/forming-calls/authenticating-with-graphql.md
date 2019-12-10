@@ -11,7 +11,7 @@
 1. [Trabalhando com variáveis](#trabalhando-com-variáveis)
 1. [Exemplo de query](#exemplo-de-query)
 1. [Exemplo de mutação](#exemplo-de-mutação)
-1. Leitura adicional
+1. [Leitura adicional](#leitura-adicional)
 
 ## Autenticando com GraphQL
 Para se comunicar com o servidor GraphQL, você precisará de um token OAuth com os escopos corretos.
