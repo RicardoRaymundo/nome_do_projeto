@@ -2,9 +2,9 @@
 
 # Migrando do REST para o GraphQL
 1. [Diferenças na lógica da API](#diferenças-na-lógica-da-api)
-2. [Exemplo: obtendo os dados necessários e nada mais](#exemplo:-obtendo-os-dados-necessários-e-nada-mais)
-3. [Exemplo: aninhando](#exemplo:-aninhando)
-4. [Exemplo: digitação forte](#exemplo:-digitação-forte)
+2. [Exemplo: obtendo os dados necessários e nada mais](#exemplo-obtendo-os-dados-necessários-e-nada-mais)
+3. [Exemplo: aninhando](#exemplo-aninhando)
+4. [Exemplo: digitação forte](#exemplo-digitação-forte)
 
 ## Diferenças na lógica da API
 A migração do REST para o GraphQL representa uma mudança significativa na lógica da API. As diferenças entre o REST como um estilo e o GraphQL como uma especificação tornam difícil - e muitas vezes indesejável - substituir as chamadas da API REST pelas consultas da API GraphQL de uma a uma. Incluímos exemplos específicos de migração abaixo.
