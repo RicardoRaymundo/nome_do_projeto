@@ -46,18 +46,18 @@ Siga estas etapas para começar a usar o GraphQL para gerenciar suas contas corp
 Para alguns exemplos de consultas, consulte " [Um exemplo de consulta usando a API de Contas Corporativas]()".
 
 ### 1. Autentique com seu token de acesso pessoal  
-Passo à passo: 
-    1. Para se autenticar com o GraphQL, você precisa gerar um PAT (token de acesso pessoal) a partir das configurações do desenvolvedor. Para obter mais informações, consulte " Criando um token de acesso pessoal para a linha de comando " na documentação de Ajuda do GitHub.
-    2. Conceda permissões de administrador e controle total ao seu token de acesso pessoal para áreas do GHES que você deseja acessar. Para obter permissão total para repositórios privados, organizações, equipes, dados do usuário e acesso a dados corporativos de faturamento e perfil, recomendamos que você selecione estes escopos para seu token de acesso pessoal:
-        -   `repo`
-        -   `admin:org`
-        -   `user`
-        -   `admin:enterprise`
-        Os escopos específicos da conta corporativa são:
-        - `admin:enterprise:` Dá controle total às empresas (inclui `manage_billing:enterprise` e `read:enterprise`)
-        - `manage_billing:enterprise:` Leia e grave dados de cobrança da empresa.
-        - `read:enterprise:` Leia os dados do perfil da empresa.
-    3. Copie seu token de acesso pessoal e mantenha-o em um local seguro até adicioná-lo ao seu cliente GraphQL.
+    
+  1. Para se autenticar com o GraphQL, você precisa gerar um PAT (token de acesso pessoal) a partir das configurações do desenvolvedor. Para obter mais informações, consulte " Criando um token de acesso pessoal para a linha de comando " na documentação de Ajuda do GitHub.
+  2. Conceda permissões de administrador e controle total ao seu token de acesso pessoal para áreas do GHES que você deseja acessar. Para obter permissão total para repositórios privados, organizações, equipes, dados do usuário e acesso a dados corporativos de faturamento e perfil, recomendamos que você selecione estes escopos para seu token de acesso pessoal:
+    - `repo`
+    - `admin:org`
+    - `user`
+    - `admin:enterprise`
+    Os escopos específicos da conta corporativa são:
+    - `admin:enterprise:` Dá controle total às empresas (inclui `manage_billing:enterprise` e `read:enterprise`)
+    - `manage_billing:enterprise:` Leia e grave dados de cobrança da empresa.
+    - `read:enterprise:` Leia os dados do perfil da empresa.
+  3. Copie seu token de acesso pessoal e mantenha-o em um local seguro até adicioná-lo ao seu cliente GraphQL.
 
 ### 2. Escolha um cliente GraphQL
 
