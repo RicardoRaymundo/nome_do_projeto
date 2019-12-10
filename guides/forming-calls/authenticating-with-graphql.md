@@ -10,7 +10,7 @@
 1. [Sobre operações de consulta e mutação](#sobre-operações-de-consulta-e-mutação)
 1. [Trabalhando com variáveis](#trabalhando-com-variáveis)
 1. [Exemplo de query](#exemplo-de-query)
-1. Exemplo de mutação
+1. [Exemplo de mutação](#exemplo-de-mutação)
 1. Leitura adicional
 
 ## Autenticando com GraphQL
@@ -197,42 +197,47 @@ Olhando a composição linha por linha:
 
 Alguns detalhes sobre o `issues` objeto:
 
-    - Os [documentos]() dizem-nos este objeto tem o tipo `IssueConnection`.
-    - A validação do esquema indica que este objeto requer um `last` ou `first` número de resultados como argumento, portanto fornecemos `20`.
-    - Os [documentos]() também nos dizem que esse objeto aceita um `states` argumento, que é uma ` [IssueState]() ` enumeração que aceita OPENou CLOSEDvaloriza. Para encontrar apenas problemas fechados, atribuímos à stateschave o valor de CLOSED.
+* Os [documentos]() dizem-nos este objeto tem o tipo `IssueConnection`.
+* A validação do esquema indica que este objeto requer um `last` ou `first` número de resultados como argumento, portanto fornecemos `20`.
+* Os [documentos]() também nos dizem que esse objeto aceita um `states` argumento, que é uma [`IssueState`]() enumeração que aceita `OPEN` ou `CLOSED` valoriza. Para encontrar apenas problemas fechados, atribuímos à `states` chave o valor de `CLOSED`.
 
 - `edges {`
 
-Sabemos que issuesé uma conexão porque tem o IssueConnectiontipo Para recuperar dados sobre problemas individuais, precisamos acessar o nó via edges.
+    Sabemos que `issues` é uma conexão porque tem o `IssueConnection` tipo Para recuperar dados sobre problemas individuais, precisamos acessar o nó via `edges`.
 
-node {
+- node {
 
-Aqui, recuperamos o nó no final da borda. Os IssueConnectiondocumentos indicam que o nó no final do IssueConnectiontipo é um Issueobjeto.
+    Aqui, recuperamos o nó no final da borda. Os [`IssueConnection` documentos]() indicam que o nó no final do IssueConnectiontipo é um Issueobjeto.
 
-Agora que sabemos que estamos recuperando um Issueobjeto, podemos examinar os documentos e especificar os campos que queremos retornar:
+- Agora que sabemos que estamos recuperando um `Issue` objeto, podemos examinar os [documentos]() e especificar os campos que queremos retornar:
 
-title
-url
-labels(first:5) {
-  edges {
-    node {
-      name
+    ```graphql
+    title
+    url
+    labels(first:5) {
+      edges {
+        node {
+          name
+        }
+      }
     }
-  }
-}
-Aqui nós especificar os title, urle labelscampos do Issueobjeto.
+    ```
+    
+    Aqui nós especificar os `title`, `url` e `labels` campos do `Issue` objeto.
+    
+    O `labels` campo tem o tipo [`LabelConnection`]() . Assim como o `issues` objeto, por `labels` ser uma conexão, devemos percorrer suas bordas para um nó conectado: o `label` objeto. No nó, podemos especificar os `label` campos do objeto que queremos retornar, neste caso `name`,.
 
-O labelscampo tem o tipo LabelConnection. Assim como o issuesobjeto, por labelsser uma conexão, devemos percorrer suas bordas para um nó conectado: o labelobjeto. No nó, podemos especificar os labelcampos do objeto que queremos retornar, neste caso name,.
+Você pode perceber que a execução dessa consulta no `Hello-World` repositório público do Octocat não retornará muitos rótulos. Tente executá-lo em um de seus próprios repositórios que usa rótulos e você provavelmente verá uma diferença.
 
-Você pode perceber que a execução dessa consulta no Hello-Worldrepositório público do Octocat não retornará muitos rótulos. Tente executá-lo em um de seus próprios repositórios que usa rótulos e você provavelmente verá uma diferença.
-
-Exemplo de mutação
+## Exemplo de mutação
 As mutações geralmente exigem informações que você só pode descobrir executando uma consulta primeiro. Este exemplo mostra duas operações:
 
-Uma consulta para obter um ID de problema.
-Uma mutação para adicionar uma reação emoji ao problema.
-Executar no Explorer
+1. Uma consulta para obter um ID de problema.
+1. Uma mutação para adicionar uma reação emoji ao problema.
 
+[Executar no Explorer]()
+
+``` graphql
 query FindIssueID {
   repository(owner:"octocat", name:"Hello-World") {
     issue(number:349) {
@@ -240,7 +245,6 @@ query FindIssueID {
     }
   }
 }
-
 mutation AddReactionToIssue {
   addReaction(input:{subjectId:"MDU6SXNzdWUyMzEzOTE1NTE=",content:HOORAY}) {
     reaction {
@@ -251,80 +255,87 @@ mutation AddReactionToIssue {
     }
   }
 }
-Embora você possa incluir uma consulta e uma mutação na mesma janela do Explorer, se você der nomes ( FindIssueIDe AddReactionToIssueneste exemplo), as operações serão executadas como chamadas separadas para o terminal do GraphQL. Não é possível realizar uma consulta ao mesmo tempo que uma mutação ou vice-versa.
+```
+
+> Embora você possa incluir uma consulta e uma mutação na mesma janela do Explorer, se você der nomes ( `FindIssueID` e `AddReactionToIssue` neste exemplo), as operações serão executadas como chamadas separadas para o terminal do GraphQL. Não é possível realizar uma consulta ao mesmo tempo que uma mutação ou vice-versa.
 
 Vamos percorrer o exemplo. A tarefa parece simples: adicione uma reação emoji a um problema.
 
 Então, como sabemos começar com uma consulta? Ainda não.
 
-Como queremos modificar os dados no servidor (anexar um emoji a um problema), começamos pesquisando no esquema uma mutação útil. Os documentos de referência mostram a addReactionmutação, com esta descrição: Adds a reaction to a subject.Perfeito!
+Como queremos modificar os dados no servidor (anexar um emoji a um problema), começamos pesquisando no esquema uma mutação útil. Os documentos de referência mostram a `addReaction` mutação, com esta descrição: `Adds a reaction to a subject.` Perfeito!
 
 Os documentos para a mutação listam três campos de entrada:
 
-clientMutationId( String)
-subjectId( ID!)
-content( ReactionContent!)
-Os !s indicam isso subjectIde contentsão campos obrigatórios. Um requisito contentfaz sentido: queremos adicionar uma reação, portanto, precisamos especificar qual emoji usar.
+- `clientMutationId`(`String`)
+- `subjectId`(`ID!`)
+- `content`(`ReactionContent!`)
 
-Mas por que é subjectIdnecessário? É porque subjectIdé a única maneira de identificar qual problema em qual repositório reagir.
+Os `!`s indicam isso `subjectId` e `content` são campos obrigatórios. Um requisito `content` faz sentido: queremos adicionar uma reação, portanto, precisamos especificar qual emoji usar.
 
-É por isso que começamos este exemplo com uma consulta: para obter o ID.
+Mas por que é `subjectId` necessário? É porque `subjectId` é a única maneira de identificar qual problema em qual repositório reagir.
+
+É por isso que começamos este exemplo com uma consulta: para obter o `ID`.
 
 Vamos examinar a linha de consulta por linha:
 
-query FindIssueID {
+- `query FindIssueID {`
 
-Aqui, estamos realizando uma consulta e o nomeamos FindIssueID. Observe que nomear uma consulta é opcional; damos um nome aqui para que possamos incluí-lo na mesma janela do Explorer que a mutação.
+    Aqui, estamos realizando uma consulta e o nomeamos `FindIssueID`. Observe que nomear uma consulta é opcional; damos um nome aqui para que possamos incluí-lo na mesma janela do Explorer que a mutação.
 
-repository(owner:"octocat", name:"Hello-World") {
+- `repository(owner:"octocat", name:"Hello-World") {`
 
-Especificamos o repositório consultando o repositoryobjeto e passando ownere nameargumentos.
+    Especificamos o repositório consultando o `repository` objeto e passando `owner` e `name` argumentos.
 
-issue(number:349) {
+- `issue(number:349) {`
 
-Especificamos o problema ao qual reagir consultando o issueobjeto e passando um numberargumento.
+    Especificamos o problema ao qual reagir consultando o `issue` objeto e passando um `number` argumento.
 
-id
+- `id`
 
-É aqui que recuperamos o idde https://github.com/octocat/Hello-World/issues/349para passar como o subjectId.
+É aqui que recuperamos o `id` de `https://github.com/octocat/Hello-World/issues/349` para passar como o `subjectId`.
 
-Quando executamos a consulta, obtemos o id:MDU6SXNzdWUyMzEzOTE1NTE=
+Quando executamos a consulta, obtemos o `id`:`MDU6SXNzdWUyMzEzOTE1NTE=`
 
-Nota : O idretorno na consulta é o valor que passaremos subjectIDna mutação. Nem a documentação nem a introspecção de esquema indicarão esse relacionamento; você precisará entender os conceitos por trás dos nomes para descobrir isso.
+> Nota : O `id` retorno na consulta é o valor que passaremos `subjectID` na mutação. Nem a documentação nem a introspecção de esquema indicarão esse relacionamento; você precisará entender os conceitos por trás dos nomes para descobrir isso.
 
 Com o ID conhecido, podemos prosseguir com a mutação:
 
-mutation AddReactionToIssue {
+- `mutation AddReactionToIssue {`
 
-Aqui estamos realizando uma mutação, e o nomeamos AddReactionToIssue. Como nas consultas, nomear uma mutação é opcional; fornecemos um nome aqui para que possamos incluí-lo na mesma janela do Explorer que a consulta.
+Aqui estamos realizando uma mutação, e o nomeamos `AddReactionToIssue`. Como nas consultas, nomear uma mutação é opcional; fornecemos um nome aqui para que possamos incluí-lo na mesma janela do Explorer que a consulta.
 
-addReaction(input:{subjectId:"MDU6SXNzdWUyMzEzOTE1NTE=",content:HOORAY}) {
+- `addReaction(input:{subjectId:"MDU6SXNzdWUyMzEzOTE1NTE=",content:HOORAY}) {`
+    Vamos examinar esta linha:
 
-Vamos examinar esta linha:
+  -   `addReaction` é o nome da mutação.
+  -   `input` é a chave de argumento necessária. Isso sempre será `input` para uma mutação.
+  -   `{subjectId:"MDU6SXNzdWUyMzEzOTE1NTE=",content:HOORAY}` é o valor do argumento necessário. Este sempre será um [objeto de entrada]() (portanto, as chaves) composto de campos de entrada ( `subjectId` e `content` neste caso) para uma mutação.
 
-addReaction é o nome da mutação.
-inputé a chave de argumento necessária. Isso sempre será inputpara uma mutação.
-{subjectId:"MDU6SXNzdWUyMzEzOTE1NTE=",content:HOORAY}é o valor do argumento necessário. Este sempre será um objeto de entrada (portanto, as chaves) composto de campos de entrada ( subjectIde contentneste caso) para uma mutação.
-Como sabemos qual valor usar para o conteúdo? Os addReactiondocumentos nos dizem que o contentcampo tem o tipo ReactionContent, que é um enum, porque apenas certas reações emoji são suportadas nos problemas do GitHub. Estes são os valores permitidos para reações (observe que alguns valores diferem dos nomes de emoji correspondentes):
+Como sabemos qual valor usar para o conteúdo? Os [`addReaction` documentos]() nos dizem que o `content` campo tem o tipo [`ReactionContent`]() , que é um [enum]() , porque apenas certas reações emoji são suportadas nos problemas do GitHub. Estes são os valores permitidos para reações (observe que alguns valores diferem dos nomes de emoji correspondentes):
 
-conteúdo	emoji
-+1	: +1:
--1	: -1:
-laugh	:sorrir:
-confused	:confuso:
-heart	:coração:
-hooray	: tada:
-rocket	:foguete:
-eyes	: olhos:
-O restante da chamada é composto pelo objeto de carga útil. É aqui que especificamos os dados que queremos que o servidor retorne após a mutação. Essas linhas vêm dos addReactiondocumentos , cujos três campos de retorno possíveis:
+| conteúdo       | emoji                                                                         |
+|---------------|-----------------------------------------------------------------|
+| +1          | :+1: |
+| -1          | :-1: |
+| laugh       | :laugh: |
+| confused    | :confused: |
+| heart       | :heart: |
+| hooray      | :hooray: |
+| rocket      | :rocket: |
+| eyes        | :eyes: |
 
-clientMutationId( String)
-reaction( Reaction!)
-subject( Reactable!)
-Neste exemplo, retornamos os dois campos obrigatórios ( reactione subject), ambos com subcampos necessários (respectivamente contente id).
+- O restante da chamada é composto pelo objeto de carga útil. É aqui que especificamos os dados que queremos que o servidor retorne após a mutação. Essas linhas vêm dos [`addReaction` documentos]() , cujos três campos de retorno possíveis:
+
+    - `clientMutationId`(`String`)
+    - `reaction`(`Reaction!`)
+    - `subject`(`Reactable`!)
+    
+    Neste exemplo, retornamos os dois campos obrigatórios ( `reaction` e `subject`), ambos com subcampos necessários (respectivamente `content` e `id`).
 
 Quando executamos a mutação, esta é a resposta:
 
+```json
 {
   "data": {
     "addReaction": {
@@ -337,12 +348,15 @@ Quando executamos a mutação, esta é a resposta:
     }
   }
 }
-É isso aí! Confira sua reação ao problema , passando o mouse sobre : tada:para encontrar seu nome de usuário.
+```
 
-Uma observação final: quando você passa vários campos em um objeto de entrada, a sintaxe pode ficar pesada. Mover os campos para uma variável pode ajudar. Veja como você pode reescrever a mutação original usando uma variável:
+É isso aí! Confira sua [reação ao problema]() , passando o mouse sobre :tada: para encontrar seu nome de usuário.
 
-Executar no Explorer
+Uma observação final: quando você passa vários campos em um objeto de entrada, a sintaxe pode ficar pesada. Mover os campos para uma [variável]() pode ajudar. Veja como você pode reescrever a mutação original usando uma variável:
 
+[Executar no Explorer]()
+
+```graphql
 mutation($myVar:AddReactionInput!) {
   addReaction(input:$myVar) {
     reaction {
@@ -359,17 +373,19 @@ variables {
     "content":"HOORAY"
   }
 }
-Você pode perceber que o contentvalor do campo no exemplo anterior (onde é usado diretamente na mutação) não possui aspas HOORAY, mas possui aspas quando usado na variável. Há uma razão para isso:
+```
 
-Quando você usa contentdiretamente na mutação, o esquema espera que o valor seja do tipo ReactionContent, que é uma enumeração , não uma sequência. A validação do esquema gerará um erro se você adicionar aspas ao redor do valor da enumeração, pois as aspas são reservadas para cadeias de caracteres.
-Quando você usa contentem uma variável, a seção de variáveis ​​deve ser JSON válida, portanto, as aspas são necessárias. A validação do esquema interpreta corretamente o ReactionContenttipo quando a variável é passada para a mutação durante a execução.
-Para obter mais informações sobre a diferença entre enumerações e strings, consulte a especificação oficial do GraphQL .
+> Você pode perceber que o `content` valor do campo no exemplo anterior (onde é usado diretamente na mutação) não possui aspas `HOORAY`, mas possui aspas quando usado na variável. Há uma razão para isso:
+>
+> - Quando você usa `content` diretamente na mutação, o esquema espera que o valor seja do tipo `ReactionContent`, que é uma *enumeração* , não uma sequência. A validação do esquema gerará um erro se você adicionar aspas ao redor do valor da enumeração, pois as aspas são reservadas para cadeias de caracteres.
+> - Quando você usa `content` em uma variável, a seção de variáveis ​​deve ser JSON válida, portanto, as aspas são necessárias. A validação do esquema interpreta corretamente o `ReactionContent` tipo quando a variável é passada para a mutação durante a execução.
+> Para obter mais informações sobre a diferença entre enumerações e strings, consulte a [especificação oficial do GraphQL]().
 
-Leitura adicional
-Há um monte mais você pode fazer quando formando as chamadas GraphQL. Aqui estão alguns lugares para procurar a seguir:
+## Leitura adicional
+Há um *monte* mais você pode fazer quando formando as chamadas GraphQL. Aqui estão alguns lugares para procurar a seguir:
 
-Paginação
-Fragmentos
-Fragmentos em linha
-Diretivas
+- [Paginação]()
+- [Fragmentos]()
+- [Fragmentos em linha]()
+- [Diretivas]()
     
