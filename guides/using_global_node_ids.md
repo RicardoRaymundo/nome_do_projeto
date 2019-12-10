@@ -27,7 +27,7 @@ você receberá uma resposta que inclui o `node_id` usuário autenticado:
 ```
 Status: 200 OK
 ```
-```graphql
+```json
 {
   "login": "octocat",
   "id": 1,
@@ -110,8 +110,8 @@ query {
 }
 ```
 
-## Esse tipo de consulta é a abordagem padrão para procurar um objeto por seu ID de nó global.
+Esse tipo de consulta é a abordagem padrão para procurar um objeto por seu ID de nó global.
 
-Usando IDs de Nó Global em Migrações
+## Usando IDs de Nó Global em Migrações
 Ao criar integrações que usam a API REST v3 ou a API GraphQL v4, é uma boa prática manter o ID do nó global para que você possa facilmente referenciar objetos nas versões da API. Para obter mais informações sobre como lidar com a transição entre o REST e o GraphQL, consulte " [Migrando do REST para o GraphQL]() ".
 
