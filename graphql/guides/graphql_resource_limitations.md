@@ -1,7 +1,3 @@
-[REFERENCIA](https://developer.github.com/v4/guides/resource-limitations/)
-
-<!--  TODO:: Implementar as caixas que envolvem os numeros nos códigos   -->
-----------------------
 
 |CONTEÚDOS                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -13,6 +9,11 @@
 | [Usando o Explorer](using_the_explorer.md)                              |   
 | [Gerenciando contas corporativas](managing-enterprise-accounts.md)      |   
 | [Limitações de recursos](graphql_resource_limitations.md)               |   
+
+<!--  TODO:: Implementar as caixas que envolvem os numeros nos códigos   -->
+----------------------
+
+[REFERENCIA](https://developer.github.com/v4/guides/resource-limitations/)
 
 # Limitações de recursos do GraphQL
 1. [Limite de nó](#limite-de-nó)
