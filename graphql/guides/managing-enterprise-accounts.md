@@ -84,17 +84,17 @@ Os próximos passos usarão o Insomnia.
         - Para o GitHub Enterprise Cloud: https://api.github.com/graphql
     2. Para autenticar, abra o menu de opções de autenticação e selecione **Token do portador**. Em seguida, adicione seu token de acesso pessoal que você copiou anteriormente.
 
-![bearer token1](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/bearer_token1.png)
+![bearer token1](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/graphql/guides/images/bearer_token1.png)
 
-![bearer token2](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/bearer_token2.png)
+![bearer token2](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/graphql/guides/images/bearer_token2.png)
 
     3. Incluir informações do cabeçalho.
 
     - Adicione `Content-Type` como cabeçalho e `application/json` como valor.
 
-![content type1](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/content_type1.png)
+![content type1](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/graphql/guides/images/content_type1.png)
 
-![content type2](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/content_type2.png)
+![content type2](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/graphql/guides/images/content_type2.png)
 
 Agora você está pronto para começar a fazer consultas.
 
