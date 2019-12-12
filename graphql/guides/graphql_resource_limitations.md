@@ -7,12 +7,12 @@
 |-----------------------------------------------------------------------------------------------------------------------------------------------|
 | [Visão global](README.md)                                                                                                                                   |   
 | [Introdução ao GraphQL](introduction_to_graphql.md)                     |   
-| [Formação de chamadas](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/forming-calls/authenticating-with-graphql.md)    |   
-| [Usando IDs de Nó Globais](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/using_global_node_ids.md)                    |   
-| [Migrando do REST](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/migrating_from_rest_to_graphql.md)                   |   
-| [Usando o Explorer](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/using_the_explorer.md)                              |   
-| [Gerenciando contas corporativas](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/managing-enterprise-accounts.md)      |   
-| [Limitações de recursos](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/graphql_resource_limitations.md)               |   
+| [Formação de chamadas](forming-calls-with-graphql.md)    |   
+| [Usando IDs de Nó Globais](using_global_node_ids.md)                    |   
+| [Migrando do REST](migrating_from_rest_to_graphql.md)                   |   
+| [Usando o Explorer](using_the_explorer.md)                              |   
+| [Gerenciando contas corporativas](managing-enterprise-accounts.md)      |   
+| [Limitações de recursos](graphql_resource_limitations.md)               |   
 
 # Limitações de recursos do GraphQL
 1. [Limite de nó](#limite-de-nó)
