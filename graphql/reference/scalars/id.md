@@ -1,0 +1,2 @@
+# ID
+Representa um identificador exclusivo que é ofuscado por Base64. É frequentemente usado para buscar um objeto ou como chave para um cache. O tipo de ID aparece em uma resposta JSON como uma String; no entanto, não se destina a ser legível por humanos. Quando esperado como um tipo de entrada, qualquer string (como "`VXNlci0xMA==`") ou número inteiro (como `4`) valor de entrada será aceito como um ID.
