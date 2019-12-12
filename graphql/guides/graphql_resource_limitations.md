@@ -6,7 +6,7 @@
 |CONTEÚDOS                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------------------|
 | [Visão global](README.md)                                                                                                                                   |   
-| [Introdução ao GraphQL](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/introduction_to_graphql.md)                     |   
+| [Introdução ao GraphQL](introduction_to_graphql.md)                     |   
 | [Formação de chamadas](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/forming-calls/authenticating-with-graphql.md)    |   
 | [Usando IDs de Nó Globais](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/using_global_node_ids.md)                    |   
 | [Migrando do REST](https://github.com/RicardoRaymundo/nome_do_projeto/blob/master/guides/migrating_from_rest_to_graphql.md)                   |   

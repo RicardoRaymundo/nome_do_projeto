@@ -2,7 +2,7 @@
 
 [REFERENCIA](https://developer.github.com/v4/guides/intro-to-graphql/)
 
-# Introduction to GraphQL
+# Introdução ao GraphQL
 1. [Terminologia do GraphQL](#terminologia-do-graphql)
 2. [Descobrindo a API GraphQL](#descobrindo-a-api-graphql)
 
